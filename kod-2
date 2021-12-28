@@ -1,0 +1,159 @@
+using System;
+using System.Collections;
+namespace _07._12._2021
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ///* Adı listem olan listeyi (dinamik diziyi ) tanımlayınız ve 8372 sayısının rakamlarını eleman olarak ekleyiniz */
+            ////property butonun yazı tipinin farklı olması kenar çizgilernin tek olması gibi dış görünüşlere denir
+            //// eveent olay nesnenin iş oluş olayını tanımlar
+            ////object istediğin türde bir değeri atayabilirsin
+            //// add en son sıraya ekler insert arayada ekler
+            //ArrayList listem = new ArrayList();   // bellekte 4 elemanlık yer kaplar    
+            //listem.Add(8);
+            //listem.Add("üç");
+            //listem.Add('7');
+            //listem.Add("45");
+
+            //// Örnek: 1 den 10 a kadar sayıları listeye eleman olarak ekleyiniz.
+
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    listem.Add(i);
+
+            //}
+            //listem.Insert(4,"1910");
+
+
+            //// Elemanlarını girerek 3 elemanlı bir static dizi tanımlayınız 
+            //// Then, dizinin elemanlarını listem dizisine atayınız
+            //// add 1 nesne ekler addrange 1 koleksiyonun elemanlarını ekler (sonuna ekler)
+
+            ////int[] dizim = { 6, 1, 3 };
+            ////listem.AddRange(dizim);
+            ////// remove yazılı elemanı siler
+            //// removeat seçili sıradaki (index numaralı )nesneyi siler
+            ////// sort listeyi sıralar
+            ////listem.Remove("45");
+            ////listem.RemoveAt(2);
+            //////listem.Sort();
+            ////// listeyi tersine çevirir
+            ////listem.Reverse();
+
+            ////metodlar bir dizide yada listede değilse sıralamak için
+            ////for (int i = 0; i < length; i++)
+            ////{
+            ////    for (int i = 0; i < length; i++)
+            ////    {
+
+            ////    }
+            ////}
+
+            //// Örnek: 9 değerenin index numarasını değişkene atayınız
+
+            ////int indeks = listem.BinarySearch(9);
+
+            ////// Örnek: 9 un olup olmadığını değişkene atayınız 
+
+            ////bool varmi = listem.Contains(9);
+
+
+            ////// listem dizisinin eleman sayısını bir değişkene atayınız 
+            ////int adet = listem.Count;
+
+            ////// listem dizisinin kapasitesini bir değişkene atayınız
+            ////int kapasite = listem.Capacity;
+
+            ////// listeyi temizleyiniz
+
+            ////// listem.Clear();
+
+            //////listenin 3 indeksli elemanını değişkene atayınız 
+            ////object eleman3 = listem[3];
+
+            ////// Örnek: 10 zar atışı sonucunu dinamik dizide tutan kodu yazınız ?
+            ////// 3 atışın değerinide ekrana yazdırınız
+
+            //ArrayList zarAtis = new ArrayList();
+            //Random rnd = new Random();
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    zarAtis.Add(rnd.Next(1, 7));
+            //}
+            //Console.WriteLine(zarAtis[2]);
+
+            ////zarAtis dizisinin dinamik elemanlarını tanımlayacağınız statik diziye döngü kullanarak atayınız
+
+            //int[] dizim = new int[zarAtis.Count];
+            //for (int i = 0; i < zarAtis.Count; i++)
+            //{
+            //    dizim[i] = (int)zarAtis[i];
+            //}
+            //int sayac=0;
+            //foreach (int item in zarAtis)
+            //{
+            //    dizim[sayac] = item;
+            //    sayac++;
+
+            //}
+            //int ikii = 0;
+            //while (ikii< zarAtis.Count)
+            //{
+            //    dizim[ikii] = (int)zarAtis[ikii];
+            //    ikii++;
+
+            //}
+
+            // 1 100 arası rastgele 10 sayı üretilecek  tek olanlarını tekler çift olanları çiftler listesine ekle bu dizileri ayrı ayrı al ve ortamalarını al ayrı ayrı
+            //count eleman sayısı
+            ArrayList tekler = new ArrayList();
+            ArrayList ciftler = new ArrayList();
+            Random rnd = new Random();
+            int toplamC = 0;
+            int toplamt = 0;
+            double ortalamac = 0;
+            double ortalamat = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                int sayi = rnd.Next(1, 101);
+                if (sayi%2==0)
+                {
+                    ciftler.Add(sayi);
+                    toplamC += sayi;
+                }
+                else
+                {
+                    tekler.Add(sayi);
+                    toplamt += (sayi);
+                }
+            }
+
+            ortalamac = toplamC / ciftler.Count;
+            ortalamat = toplamt / tekler.Count;
+            // basamak sayısının 2 basamaklı yap
+            Console.WriteLine("Çiftlerin ortalaması={0:F2}",toplamC/ciftler.Count);
+            Console.WriteLine("Teklerin Ortalaması={0:F2}",toplamC/tekler.Count);
+
+            Console.ReadKey();
+
+            
+
+
+            // Örnek: listenin elemanlarını alt alta ekrana yazdırınız 
+            // foreach dizilerin elemanlarını okumak için kullanılır
+
+            //foreach (var item in zarAtis)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            Console.ReadKey();
+
+
+
+
+        }
+    }
+}
