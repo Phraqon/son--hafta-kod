@@ -1,0 +1,121 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _21._12._2021
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /* klavyeden girilen bir metnin 3 indexli elemanından itibaren 4 karakteri yazınız*/
+
+            //string metin = "aleyküm";
+            //Console.WriteLine(metin.Substring(3,4));
+            //Console.ReadKey();
+            /* method gel lan buraya */
+            //toplama();
+            //karekok();
+            //Console.WriteLine("1.sayı gir: ");
+            //int sayı1=Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("2.sayı gir :");
+            //int sayı2=Convert.ToInt32(Console.ReadLine());
+            //toplama2(sayı1, sayı2);
+
+            //Console.WriteLine("sayı gir: ");
+            //int deger = Convert.ToInt32(Console.ReadLine());
+            //kuvvetihesapla(deger);
+            //Console.WriteLine(toplama3());
+            //Console.WriteLine(yuvarla());
+            
+            
+            Console.ReadKey();
+        }
+
+        /* Methodlar buraya yazılır*/
+        // tanımlama
+        // 1.tip: Çağırıldığı yerden parametre almayan ve tekrar çağırıldığı yere değer döndürmeyen 
+        // 2.tip: çağırıldığı yerden parametre alan ve değer döndürmeyen
+        // 3.tip: Çağırıldığı yerden parametere almayan değer döndüren
+        // 4.tip çağırıldığı yerden parametre alan ve değer döndüren 
+        //public static void toplama() 
+        //{
+        //    int a = 613;
+        //    int b = 8372;
+        //    int sonuc = a + b;
+        //    Console.Write(sonuc);
+
+
+        //}
+        //1 tip ile 
+        /*alt program klavyeden bir sayı alacak ve kare kökünü ekrana yazdıracak alt programı yazın ve çağırın */
+        // değer döndğrmeyecekse void yaz
+
+
+        //public static void karekok()
+        //{
+        //    Console.Write("Sayı Gir : ");
+        //    int sayi = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine(Math.Sqrt(sayi));
+
+        //}
+
+        //2.Tip ile
+        /* Örnek: Ana programda kalvyeden iki sayı alıncaktır altprogramdan bu sayılar toplanacak ve sonu ekrana yazdıralacaktır*/
+
+        //public static void toplama2(int x,int y) 
+        //{
+        //    Console.WriteLine(x+y);
+
+        //}
+        /* Ana programda klavyeden bir sayı alınacaktır  alt programda bu sayının 3. kuvveti hesaplanıp ekrana yazdırılacaktır */
+
+        //public static void kuvvetihesapla(int gelen) 
+        //{
+        //    Console.WriteLine(Math.Pow(gelen,3));
+
+        //}
+
+        // 3.tip ile
+        /* Örnek: Altprogramda klavyeden 2 sayı alıncak ve değerleri toplanacaktır sonuç ana programda ekrana yazdırılacaktır*/
+
+        //public static int toplama3() 
+        //{
+        //    Console.Write("1.Sayı gir: ");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.Write("2.Sayı gir: ");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+        //    int sonuc = sayi1 + sayi2;
+        //    return sonuc;
+        //}
+        // Örnek: Klavyeden aldığı  ondalıklı sayıyı tamsayıya yuvarlayan altprogramı yazınız
+        /* Alt programın ürettiği değeri ana programda ekrana yazdırınız*/
+        //public static double yuvarla() 
+        //{
+        //    Console.WriteLine("Ondalıklı Sayı Gir: ");
+        //    Double sayi1=Convert.ToDouble(Console.ReadLine());
+
+        //    return Math.Round(sayi1);
+
+        //}
+
+        
+        // 4.Tip ile
+        //örnek:anaprogramda klavyeden alınan iki değeri altprogramda toplayıp sonucunu ana programda ekrana yazdıran kodu yazınız 
+
+        private static int toplama4(int z, int r)
+        {
+            return z + r;
+        }
+        static void gecici()
+        {
+            Console.WriteLine(toplama4(5, 9));
+        }
+
+        // Uygulama:
+
+        // klavyeden bir sayı al 1 den bu sayıya kadar olan sayıların ortalamasını for ile bul ekrana yazdır 4 tip altprogram için ayrı ayrı çalıştır 
+    }
+}
